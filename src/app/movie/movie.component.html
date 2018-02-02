@@ -1,0 +1,23 @@
+<div class="search">
+  <div class="search-field">
+      <input #movieTitle placeholder="Search a Movie..." required/>
+      <span (click)="searchMovie(movieTitle.value); movieTitle.value=''">
+        <i class="fa fa-search search-icon"></i>
+      </span>
+  </div>
+</div>
+
+<div class="flex-container"
+    infiniteScroll
+    [infiniteScrollDistance]="2"
+    [infiniteScrollThrottle]="50"
+    (scrolled)="onScroll()">
+    <div *ngFor="let m of movie" class="flex-item">
+      <div class="container">
+          <img mat-card-image src="{{m.poster}}" alt="{{m.title}}">
+        <div class="content">
+          <h3>{{m.title}}</h3>
+        </div>
+      </div>
+    </div>
+</div>

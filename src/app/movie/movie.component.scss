@@ -1,0 +1,42 @@
+.search {
+  margin-top: 20px;
+
+  &-field {
+    text-align: center;
+    margin-bottom: 50px;
+
+    input {
+      border: 0;
+      outline: 0;
+      width: 33%;
+      background: transparent;
+      border-bottom: 1px solid black;
+    }
+  }
+
+  &-icon {
+    cursor: pointer;
+  }
+}
+
+
+.flex {
+  &-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  &-item {
+    padding: 5px;
+    margin-top: 10px;
+  }
+}
+
