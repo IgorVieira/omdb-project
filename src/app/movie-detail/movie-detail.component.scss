@@ -1,0 +1,31 @@
+.detail {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+
+  &-poster {
+    padding: 10px;
+    margin-bottom: 30px;
+
+  }
+
+  &-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 1px #000 solid;
+  }
+
+  &-description {
+    width: 700px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width : 800) {
+  .detail {
+    flex-flow: row;
+  }
+}

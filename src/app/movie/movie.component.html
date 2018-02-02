@@ -13,11 +13,13 @@
     [infiniteScrollThrottle]="50"
     (scrolled)="onScroll()">
     <div *ngFor="let m of movie" class="flex-item">
-      <div class="container">
-          <img mat-card-image src="{{m.poster}}" alt="{{m.title}}">
-        <div class="content">
-          <h3>{{m.title}}</h3>
+      <a routerLink="/detail/{{m.id}}">
+        <div class="container">
+            <img mat-card-image src="{{m.poster}}" alt="{{m.title}}">
+          <div class="content">
+            <h3>{{m.title}}</h3>
+          </div>
         </div>
-      </div>
+      </a>
     </div>
 </div>

@@ -1,0 +1,54 @@
+<div *ngIf="movie">
+  <div class="detail">
+
+      <div class="detail-poster">
+        <div class="container">
+            <img mat-card-image src="{{movie.poster}}" alt="{{movie.title}}">
+          <div class="content">
+            <h3>{{movie.title}}</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="detail-description">
+        <div class="detail-description-header">
+          <div class="detail-title">
+            {{ movie.title }} - {{ movie.year }} | Time: {{ movie.runtime }}
+          </div>
+          <hr>
+        </div>
+        <div class="detail-description-body">
+          <h3>
+            Director:
+          </h3>
+          <p>
+            {{ movie.director }}
+          </p>
+          <h3>
+            Writer:
+          </h3>
+          <p>
+            {{ movie.writer }}
+          </p>
+          <h3>
+            Genre:
+          </h3>
+          <p>
+            {{ movie.genre }}
+          </p>
+          <h3>
+            Language:
+          </h3>
+          <p>
+            {{ movie.language }}
+          </p>
+          <h3>
+            Country:
+          </h3>
+          <p>
+            {{ movie.country }}
+          </p>
+        </div>
+      </div>
+  </div>
+</div>

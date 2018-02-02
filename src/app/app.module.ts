@@ -9,13 +9,15 @@ import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 import { MovieService } from './movie.service'
 
 import { HttpModule } from '@angular/http';
+import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MovieComponent
+    MovieComponent,
+    MovieDetailComponent
   ],
   imports: [
     BrowserModule,
