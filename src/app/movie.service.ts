@@ -5,7 +5,7 @@ import { Http } from '@angular/http';
 @Injectable()
 export class MovieService {
   private hashUrl: string = '&apikey=91d97dae'
-  private baseUrl: string = 'http://www.omdbapi.com'
+  private baseUrl: string = 'https://www.omdbapi.com'
 
   constructor(private http: Http) { }
 
