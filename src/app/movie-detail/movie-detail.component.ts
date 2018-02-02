@@ -12,7 +12,7 @@ import { Location } from '@angular/common'
 })
 export class MovieDetailComponent implements OnInit {
 
-  private movie: Movie
+  movie: Movie
 
   constructor(
     private route: ActivatedRoute,
