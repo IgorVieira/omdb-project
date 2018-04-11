@@ -1,4 +1,4 @@
-# OmdbProject - [Heroku](https://mysterious-everglades-65910.herokuapp.com/movies)
+# OmdbProject - [Heroku](https://mysterious-everglades-65910.herokuapp.com)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.6.
 
